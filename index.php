@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SKU CAHCET Login</title>
+    <title>SKU CAHCET LOGIN</title>
     <style>
         body {
             background-color: #e6f0ff;
@@ -83,44 +83,19 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             margin-bottom: 15px;
             text-align: center;
         }
-
-        .toggle-password {
-            float: right;
-            margin-top: -30px;
-            margin-right: 10px;
-            cursor: pointer;
-            font-size: 0.9em;
-            color: #0059b3;
-        }
     </style>
 </head>
 <body>
     <div class="login-container">
-        <h2>SKU CAHCET LOGIN</h2>
+        <h2>SKU CAHCET Login</h2>
         <?php if (isset($error)): ?>
             <div class="error"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
         <form method="post" action="">
             <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" id="password" placeholder="Password" required>
-            <span class="toggle-password" onclick="togglePassword()">Show</span>
+            <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
     </div>
-
-    <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('password');
-            const toggleText = document.querySelector('.toggle-password');
-            if (passwordInput.type === "password") {
-                passwordInput.type = "text";
-                toggleText.textContent = "Hide";
-            } else {
-                passwordInput.type = "password";
-                toggleText.textContent = "Show";
-            }
-        }
-    </script>
 </body>
 </html>
-
