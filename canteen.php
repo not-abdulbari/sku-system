@@ -94,8 +94,8 @@ if (!isset($_SESSION['username'])) {
 </header>
 
 <div class="container">
-    <button class="canteen-button" onclick="location.href='boys_canteen.php'">BOYS CANTEEN</button>
-    <button class="canteen-button" onclick="location.href='girls_canteen.php'">GIRLS CANTEEN</button>
+    <button class="canteen-button" onclick="location.href='boys_canteen.php'">BOYS-CANTEEN</button>
+    <button class="canteen-button" onclick="location.href='girls_canteen.php'">GIRLS-CANTEEN</button>
 </div>
 
 <footer>
