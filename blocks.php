@@ -1,4 +1,8 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+echo $undefined_variable; // Intentional error to trigger a warning
+
 session_start();
 
 // Redirect to login if user is not authenticated
