@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SKU CAHECET Login</title>
+    <title>SKU CAHCET Login</title>
     <style>
         body {
             background-color: #e6f0ff;
@@ -96,7 +96,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 </head>
 <body>
     <div class="login-container">
-        <h2>SKU CAHECET Login</h2>
+        <h2>SKU CAHCET LOGIN</h2>
         <?php if (isset($error)): ?>
             <div class="error"><?= htmlspecialchars($error) ?></div>
         <?php endif; ?>
