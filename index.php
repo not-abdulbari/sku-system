@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if ($user && $hashedPassword === $user['password']) {
         $_SESSION['username'] = $username;
-        header("Location: blocks/dashboard.php");
+        header("Location: blocks.php");
         exit();
     } else {
         $error = "Invalid username or password.";
