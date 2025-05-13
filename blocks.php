@@ -109,12 +109,6 @@ if (!isset($_SESSION['username'])) {
     <div class="block">MAIN CANTEEN</div>
     <div class="block">MINI CANTEEN</div>
     <div class="block">GUEST ROOM</div>
-
-
-
-
-
-    
     <div class="block">HOSTEL</div>
 </div>
 
