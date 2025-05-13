@@ -95,7 +95,7 @@ if (!isset($_SESSION['username'])) {
 
 <div class="container">
     <div class="block"><a href="main_block.php" style="text-decoration:none; color: inherit;">MAIN BLOCK</a></div>    
-    <div class="block">TECH TOWER</div>
+    <div class="block"><a href="tech_tower.php" style="text-decoration:none; color: inherit;">TECH TOWER</a></div>    
     <div class="block">LIBRARY</div>
     <div class="block">ECE BLOCK</div>
     <div class="block">AUDITORIUM</div>
