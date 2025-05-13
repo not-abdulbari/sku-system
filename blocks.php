@@ -94,9 +94,16 @@ if (!isset($_SESSION['username'])) {
 </header>
 
 <div class="container">
-    <?php for ($i = 1; $i <= 10; $i++): ?>
-        <div class="block">Block <?= $i ?></div>
-    <?php endfor; ?>
+    <div class="block">Block 1</div>
+    <div class="block">Block 2</div>
+    <div class="block">Block 3</div>
+    <div class="block">Block 4</div>
+    <div class="block">Block 5</div>
+    <div class="block">Block 6</div>
+    <div class="block">Block 7</div>
+    <div class="block">Block 8</div>
+    <div class="block">Block 9</div>
+    <div class="block">Block 10</div>
 </div>
 
 <footer>
@@ -105,4 +112,3 @@ if (!isset($_SESSION['username'])) {
 
 </body>
 </html>
-
