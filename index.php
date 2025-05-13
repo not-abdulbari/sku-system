@@ -1,5 +1,9 @@
 <?php
 session_start();
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+echo $undefined_variable; // Intentional error to trigger a warning
+
 require_once 'db_connect.php';
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
