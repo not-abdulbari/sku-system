@@ -1,0 +1,106 @@
+<?php
+session_start();
+
+// Redirect to login if not authenticated
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canteen Selection - SKU CAHCET</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f0f4f8;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        .logout {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .logout:hover {
+            background-color: #cc0000;
+        }
+
+        .container {
+            margin-top: 100px;
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .canteen-button {
+            background-color: #003366;
+            color: white;
+            padding: 40px 60px;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .canteen-button:hover {
+            transform: translateY(-10px);
+            background-color: #00509e;
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a class="logout" href="../logout.php">Logout</a>
+    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - SKU CAHCET</h1>
+    <p>Select a Canteen</p>
+</header>
+
+<div class="container">
+    <button class="canteen-button" onclick="location.href='boys_canteen.php'">BOYS CANTEEN</button>
+    <button class="canteen-button" onclick="location.href='girls_canteen.php'">GIRLS CANTEEN</button>
+</div>
+
+<footer>
+    &copy; <?= date('Y') ?> SKU CAHCET | Developed by CSE students
+</footer>
+
+</body>
+</html>
