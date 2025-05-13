@@ -94,16 +94,28 @@ if (!isset($_SESSION['username'])) {
 </header>
 
 <div class="container">
-    <div class="block">Block 1</div>
-    <div class="block">Block 2</div>
-    <div class="block">Block 3</div>
-    <div class="block">Block 4</div>
-    <div class="block">Block 5</div>
-    <div class="block">Block 6</div>
-    <div class="block">Block 7</div>
-    <div class="block">Block 8</div>
-    <div class="block">Block 9</div>
-    <div class="block">Block 10</div>
+    <div class="block">MAIN BLOCK</div>
+    <div class="block">TECH TOWER</div>
+    <div class="block">LIBRARY</div>
+    <div class="block">ECE BLOCK</div>
+    <div class="block">AUDITORIUM</div>
+    <div class="block">EEE BLOCK</div>
+    <div class="block">MBA BLOCK</div>
+    <div class="block">MECH BLOCK</div>
+    <div class="block">AERO BLOCK</div>
+    <div class="block">ARCHITECT BLOCK</div>
+    <div class="block">BOYS HOSTEL</div>
+    <div class="block">GIRLS HOSTEL</div>
+    <div class="block">MAIN CANTEEN</div>
+    <div class="block">MINI CANTEEN</div>
+    <div class="block">GUEST ROOM</div>
+
+
+
+
+
+    
+    <div class="block">HOSTEL</div>
 </div>
 
 <footer>
