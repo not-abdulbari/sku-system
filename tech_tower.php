@@ -1,8 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-echo $undefined_variable; // Intentional error to trigger a warning
-
 session_start();
 
 // Redirect to login if user is not authenticated
@@ -16,12 +12,12 @@ if (!isset($_SESSION['username'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blocks - SKU CAHCET</title>
+    <title>Tech Tower - SKU CAHCET</title>
     <style>
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f0f4f8;
+            background: #f8f9fa;
         }
 
         header {
@@ -89,33 +85,23 @@ if (!isset($_SESSION['username'])) {
 
 <header>
     <a class="logout" href="../logout.php">Logout</a>
-    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - SKU CAHCET</h1>
-    <p>Select a Block Below</p>
+    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Tech Tower</h1>
+    <p>Select a Room Below</p>
 </header>
 
 <div class="container">
-    <div class="block"><a href="main_block.php" style="text-decoration:none; color: inherit;">MAIN BLOCK</a></div>    
-    <div class="block">TECH TOWER</div>
-    <div class="block">LIBRARY</div>
-    <div class="block">ECE BLOCK</div>
-    <div class="block">AUDITORIUM</div>
-    <div class="block">EEE BLOCK</div>
-    <div class="block">MBA BLOCK</div>
-    <div class="block">MECH BLOCK</div>
-    <div class="block">AERO BLOCK</div>
-    <div class="block">ARCHITECT BLOCK</div>
-    <div class="block">BOYS HOSTEL</div>
-    <div class="block">GIRLS HOSTEL</div>
-    <div class="block">MAIN CANTEEN</div>
-    <div class="block">MINI CANTEEN</div>
-    <div class="block">GUEST ROOM</div>
-
-
-
-
-
-    
-    <div class="block">HOSTEL</div>
+    <div class="block">Lab 1</div>
+    <div class="block">Lab 2</div>
+    <div class="block">Lab 3</div>
+    <div class="block">Lab 4</div>
+    <div class="block">Lab 5</div>
+    <div class="block">Lab 6</div>
+    <div class="block">Lab 7</div>
+    <div class="block">Lab 8</div>
+    <div class="block">Lab 9</div>
+    <div class="block">Lab 10</div>
+    <div class="block">Seminar Hall</div>
+    <div class="block">Office</div>
 </div>
 
 <footer>
