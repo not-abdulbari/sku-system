@@ -3,7 +3,7 @@ session_start();
 
 // Redirect to login if user is not authenticated
 if (!isset($_SESSION['username'])) {
-    header("Location: ../index.php");
+    header("Location: index.php");
     exit();
 }
 ?>
@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Blocks - SKU CAHECET</title>
+    <title>Blocks - SKU CAHCET</title>
     <style>
         body {
             margin: 0;
@@ -85,7 +85,7 @@ if (!isset($_SESSION['username'])) {
 
 <header>
     <a class="logout" href="../logout.php">Logout</a>
-    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - SKU CAHECET</h1>
+    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - SKU CAHCET</h1>
     <p>Select a Block Below</p>
 </header>
 
@@ -96,7 +96,7 @@ if (!isset($_SESSION['username'])) {
 </div>
 
 <footer>
-    &copy; <?= date('Y') ?> SKU CAHECET | Developed by IT Team
+    &copy; <?= date('Y') ?> SKU CAHCET | Developed by CSE students
 </footer>
 
 </body>
