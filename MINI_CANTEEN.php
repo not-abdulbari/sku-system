@@ -101,7 +101,7 @@ if (!isset($_SESSION['username'])) {
 <body>
 
 <header>
-    <a class="back-btn" href="canteen.php">← Back</a>
+    <a class="back-btn" href="blocks.php">← Back</a>
     <a class="logout" href="../logout.php">Logout</a>
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Mini Canteen</h1>
     <p>Select a Canteen</p>
