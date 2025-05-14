@@ -87,6 +87,11 @@ if (!isset($_SESSION['username'])) {
             min-width: 250px;
             text-align: center;
         }
+
+        .canteen-button:hover {
+            background-color: #0055AA;
+            transform: scale(1.05);
+        }
     </style>
 </head>
 <body>
@@ -97,7 +102,8 @@ if (!isset($_SESSION['username'])) {
 </header>
 
 <div class="container">
-    <!-- Add your canteen options here -->
+    <button class="canteen-button" onclick="window.location.href='boys_canteen.php'">BOYS CANTEEN</button>
+    <button class="canteen-button" onclick="window.location.href='girls_canteen.php'">GIRLS CANTEEN</button>
 </div>
 </body>
 </html>
