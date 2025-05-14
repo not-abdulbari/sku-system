@@ -1,63 +1,123 @@
+<?php
+session_start();
+
+// Redirect to login if user is not authenticated
+if (!isset($_SESSION['username'])) {
+    header("Location: index.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechanical Block</title>
+    <title>MECH Block - SKU CAHCET</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f8f9fa;
+        }
+
+        header {
+            background-color: #004080;
+            color: white;
+            padding: 20px;
             text-align: center;
-            margin: 50px;
+            position: relative;
         }
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px;
-            font-size: 16px;
-            color: #fff;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease, transform 0.2s ease;
-        }
-        .button:hover {
-            background-color: #0056b3;
-            transform: scale(1.1);
-        }
+
         .back-button {
-            background-color: #6c757d;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
         }
+
         .back-button:hover {
-            background-color: #5a6268;
+            background-color: #cc0000;
+        }
+
+        .container {
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #00509e;
+            color: white;
+            padding: 20px 30px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            background-color: #003f7f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
-    <h1>Mechanical Block</h1>
-    <button class="button">Class 1</button>
-    <button class="button">Class 2</button>
-    <button class="button">Class 3</button>
-    <button class="button">Class 4</button>
-    <button class="button">Class 5</button>
-    <button class="button">Class 6</button>
-    <button class="button">Class 7</button>
-    <button class="button">Class 8</button>
-    <button class="button">Class 9</button>
-    <button class="button">Class 10</button>
-    <button class="button">Class 11</button>
-    <button class="button">Class 12</button>
-    <button class="button">Class 13</button>
-    <button class="button">Class 14</button>
-    <button class="button">Class 15</button>
-    <button class="button">Class 16</button>
-    <button class="button">Class 17</button>
-    <button class="button">Class 18</button>
-    <button class="button">Class 19</button>
-    <button class="button">Class 20</button>
-    <br>
-    <button class="button back-button" onclick="window.history.back();">Back</button>
+
+<header>
+    <a class="back-button" href="blocks.php">Back</a>
+    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - MECH Block</h1>
+    <p>Select a Class Below</p>
+</header>
+
+<div class="container">
+    <div class="button">Class 1</div>
+    <div class="button">Class 2</div>
+    <div class="button">Class 3</div>
+    <div class="button">Class 4</div>
+    <div class="button">Class 5</div>
+    <div class="button">Class 6</div>
+    <div class="button">Class 7</div>
+    <div class="button">Class 8</div>
+    <div class="button">Class 9</div>
+    <div class="button">Class 10</div>
+    <div class="button">Class 11</div>
+    <div class="button">Class 12</div>
+    <div class="button">Class 13</div>
+    <div class="button">Class 14</div>
+    <div class="button">Class 15</div>
+    <div class="button">Class 16</div>
+    <div class="button">Class 17</div>
+    <div class="button">Class 18</div>
+    <div class="button">Class 19</div>
+    <div class="button">Class 20</div>
+</div>
+
+<footer>
+    &copy; <?= date('Y') ?> SKU CAHCET | Developed by CSE students
+</footer>
+
 </body>
 </html>
