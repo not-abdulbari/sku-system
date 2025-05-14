@@ -106,7 +106,10 @@ if (!isset($_SESSION['username'])) {
     <div class="block"><a href="mech_block.php" style="text-decoration:none; color: inherit;">MECH BLOCK</a></div>    
     <div class="block"><a href="aero_block.php" style="text-decoration:none; color: inherit;">AERO BLOCK</a></div>    
     <div class="block"><a href="arch_block.php" style="text-decoration:none; color: inherit;">ARCHITECT BLOCK</a></div>    
-    <div class="block"><a href="BOYS_HOSTEL.php" style="text-decoration:none; color: inherit;">BOYS HOSTEL</a></div>     
+    <div class="block"><a href="BOYS_HOSTEL.php" style="text-decoration:none; color: inherit;">BOYS HOSTEL</a></div>   
+    <div class="block"><a href="GIRLS_HOSTEL.php" style="text-decoration:none; color: inherit;">GIRLS HOSTEL</a></div>     
+    <div class="block">MAIN CANTEEN</div>
+    <div class="block"><a href="MINI_CANTEEN.php" style="text-decoration:none; color: inherit;">MINI CANTEEN</a></div>    
     <div class="block">GIRLS HOSTEL</div>
     <div class="block"><a href="canteen.php" style="text-decoration:none; color: inherit;">MAIN CANTEEN</a></div>     
     <div class="block">MINI CANTEEN</div>
