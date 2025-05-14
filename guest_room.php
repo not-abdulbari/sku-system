@@ -28,6 +28,24 @@ if (!isset($_SESSION['username'])) {
             position: relative;
         }
 
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: #6c757d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .back-button:hover {
+            background-color: #5a6268;
+            transform: scale(1.1);
+        }
+
         .logout {
             position: absolute;
             top: 20px;
@@ -84,6 +102,7 @@ if (!isset($_SESSION['username'])) {
 <body>
 
 <header>
+    <a href="javascript:history.back()" class="back-button">Back</a>
     <a class="logout" href="../logout.php">Logout</a>
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Guest Room</h1>
     <p>Select a Room</p>
