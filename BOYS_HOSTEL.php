@@ -79,6 +79,24 @@ if (!isset($_SESSION['username'])) {
             font-size: 0.9em;
             margin-top: 40px;
         }
+
+        .back-button {
+            margin: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -88,6 +106,11 @@ if (!isset($_SESSION['username'])) {
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Boys Hostel</h1>
     <p>Select a Room</p>
 </header>
+
+<!-- Back Button -->
+<div>
+    <a class="back-button" href="blocks.php">Back</a>
+</div>
 
 <div class="container">
     <button class="room-button">Room 1</button>
