@@ -85,5 +85,19 @@ if (!isset($_SESSION['username'])) {
             transition: transform 0.3s ease, background-color 0.3s ease;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             min-width: 250px;
-            text
-
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <a href="blocks.php" class="back-button">Back</a>
+    <h1>Welcome to the Canteen Selection</h1>
+    <a href="logout.php" class="logout">Logout</a>
+</header>
+
+<div class="container">
+    <!-- Add your canteen options here -->
+</div>
+</body>
+</html>
