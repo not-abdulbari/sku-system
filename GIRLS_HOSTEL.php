@@ -45,6 +45,23 @@ if (!isset($_SESSION['username'])) {
             background-color: #cc0000;
         }
 
+        .exit {
+            position: absolute;
+            top: 20px;
+            left: 30px; /* Positioning it on the left side */
+            background-color: #4CAF50; /* Green background */
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .exit:hover {
+            background-color: #2e8b57; /* Darker green on hover */
+        }
+
         .container {
             padding: 40px;
             max-width: 1200px;
@@ -84,6 +101,9 @@ if (!isset($_SESSION['username'])) {
 <body>
 
 <header>
+    <!-- Adding the Exit button -->
+    <a class="exit" href="blocks.php">Exit</a>
+
     <a class="logout" href="../logout.php">Logout</a>
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Girls Hostel</h1>
     <p>Select a Room</p>
