@@ -1,6 +1,8 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+$undefined_variable = 'value'; // Initialize the variable with a value
+// $value = $undefined_variable ?? 'default_value';
 echo $undefined_variable; // Intentional error to trigger a warning
 
 session_start();
