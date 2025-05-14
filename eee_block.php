@@ -12,7 +12,7 @@ if (!isset($_SESSION['username'])) {
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Main Block - SKU CAHCET</title>
+    <title>EEE Block - SKU CAHCET</title>
     <style>
         body {
             margin: 0;
@@ -26,6 +26,23 @@ if (!isset($_SESSION['username'])) {
             padding: 20px;
             text-align: center;
             position: relative;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background-color: #ff4d4d;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #cc0000;
         }
 
         .container {
@@ -65,49 +82,14 @@ if (!isset($_SESSION['username'])) {
             font-size: 0.9em;
             margin-top: 40px;
         }
-
-        .logout {
-            position: absolute;
-            top: 20px;
-            right: 30px;
-            background-color: #ff4d4d;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
-        }
-
-        .logout:hover {
-            background-color: #cc0000;
-        }
-
-        .back-button {
-            position: absolute;
-            top: 20px;
-            left: 30px;
-            background-color: #28a745;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 0.9em;
-            transition: background-color 0.3s ease;
-        }
-
-        .back-button:hover {
-            background-color: #218838;
-        }
     </style>
 </head>
 <body>
 
 <header>
     <a class="back-button" href="blocks.php">Back</a>
-    <a class="logout" href="../logout.php">Logout</a>
-    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Main Block</h1>
-    <p>Choose a Class Below</p>
+    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - EEE Block</h1>
+    <p>Select a Class Below</p>
 </header>
 
 <div class="container">
