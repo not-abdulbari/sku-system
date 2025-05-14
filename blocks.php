@@ -103,6 +103,10 @@ if (!isset($_SESSION['username'])) {
     <div class="block">AUDITORIUM</div>
     <div class="block"><a href="eee_block.php" style="text-decoration:none; color: inherit;">EEE BLOCK</a></div>    
     <div class="block"><a href="mba_block.php" style="text-decoration:none; color: inherit;">MBA BLOCK</a></div>    
+    <div class="block"><a href="mech_block.php" style="text-decoration:none; color: inherit;">MECH BLOCK</a></div>    
+    <div class="block"><a href="aero_block.php" style="text-decoration:none; color: inherit;">AERO BLOCK</a></div>    
+    <div class="block"><a href="arch_block.php" style="text-decoration:none; color: inherit;">ARCHITECT BLOCK</a></div>    
+    <div class="block">BOYS HOSTEL</div>
     <div class="block"><a href="mech_block.php" style="text-decoration:none; color: inherit;">MBA BLOCK</a></div>    
     <div class="block">AERO BLOCK</div>
     <div class="block">ARCHITECT BLOCK</div>
