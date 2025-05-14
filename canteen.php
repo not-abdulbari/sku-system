@@ -32,6 +32,23 @@ if (!isset($_SESSION['username'])) {
             position: relative;
         }
 
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+
         .logout {
             position: absolute;
             top: 20px;
@@ -68,39 +85,5 @@ if (!isset($_SESSION['username'])) {
             transition: transform 0.3s ease, background-color 0.3s ease;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
             min-width: 250px;
-            text-align: center;
-        }
-
-        .canteen-button:hover {
-            transform: translateY(-10px);
-            background-color: #00509e;
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <a class="logout" href="../logout.php">Logout</a>
-    <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - SKU CAHCET</h1>
-    <p>Select a Canteen</p>
-</header>
-
-<div class="container">
-    <button class="canteen-button" onclick="location.href='boys_canteen.php'">BOYS-CANTEEN</button>
-    <button class="canteen-button" onclick="location.href='girls_canteen.php'">GIRLS-CANTEEN</button>
-</div>
-
-<footer>
-    &copy; <?= date('Y') ?> SKU CAHCET | Developed by CSE students
-</footer>
-
-</body>
-</html>
+            text
+
