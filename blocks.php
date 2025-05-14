@@ -99,7 +99,7 @@ if (!isset($_SESSION['username'])) {
     <div class="block">LIBRARY</div>
     <div class="block"><a href="ece_block.php" style="text-decoration:none; color: inherit;">ECE BLOCK</a></div>                            
     <div class="block">AUDITORIUM</div>
-    <div class="block">EEE BLOCK</div>
+    <div class="block"><a href="eee_block.php" style="text-decoration:none; color: inherit;">EEE BLOCK</a></div>    
     <div class="block"><a href="mba_block.php" style="text-decoration:none; color: inherit;">MBA BLOCK</a></div>    
     <div class="block">MECH BLOCK</div>
     <div class="block">AERO BLOCK</div>
