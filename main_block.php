@@ -104,7 +104,7 @@ if (!isset($_SESSION['username'])) {
 <body>
 
 <header>
-    <a class="back-button" href="block.php">Back</a>
+    <a class="back-button" href="blocks.php">Back</a>
     <a class="logout" href="../logout.php">Logout</a>
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Main Block</h1>
     <p>Choose a Class Below</p>
