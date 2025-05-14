@@ -25,6 +25,7 @@ if (!isset($_SESSION['username'])) {
             color: white;
             padding: 20px;
             text-align: center;
+            position: relative;
         }
 
         .container {
@@ -81,11 +82,29 @@ if (!isset($_SESSION['username'])) {
         .logout:hover {
             background-color: #cc0000;
         }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #218838;
+        }
     </style>
 </head>
 <body>
 
 <header>
+    <a class="back-button" href="block.php">Back</a>
     <a class="logout" href="../logout.php">Logout</a>
     <h1>Welcome <?= htmlspecialchars($_SESSION['username']) ?> - Main Block</h1>
     <p>Choose a Class Below</p>
